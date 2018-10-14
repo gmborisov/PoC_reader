@@ -10,6 +10,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - pwd
+      - ls -l
       - ./gradlew build --parallel
   post_build:
     commands:
