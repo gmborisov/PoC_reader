@@ -19,9 +19,4 @@ artifacts:
     - server/build/libs/*.war
     - client/build/static/*.war
   discard-paths: yes
-cache:
-  paths:
-    - /root/.gradle/native/**/*
-    - /root/.gradle/caches/**/*
-    - /root/.gradle/nodejs/**/*
-    - /root/.gradle/wrapper/**/*
+
