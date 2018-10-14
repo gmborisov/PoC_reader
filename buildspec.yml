@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - ./gradlew build --parallel
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - server/build/libs/*.war
+    - client/build/static/*.war
+  discard-paths: yes
+cache:
+  paths:
+    - /root/.gradle/native/**/*
+    - /root/.gradle/caches/**/*
+    - /root/.gradle/nodejs/**/*
+    - /root/.gradle/wrapper/**/*
