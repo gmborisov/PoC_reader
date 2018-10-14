@@ -19,6 +19,6 @@ phases:
 artifacts:
   files:
     - server/build/libs/*.war
-    - client/build/static/*.war
+    - client/build/*/**
   discard-paths: yes
 
